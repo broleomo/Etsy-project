@@ -23,13 +23,13 @@ function question1 () {
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 function question2 () {
   // Answer:
-  let cheap = [];
+  // let cheap = [];
   for (i = 0; i < data.length; i++){
     if (data[i].price >= 14.00 && data[i].price <= 18.00){
-    cheap.push(data[i].title);
+    console.log(data[i].title);
   }
   }
-    console.log(cheap);
+    // console.log(cheap);
   }
 
 
@@ -49,13 +49,14 @@ function question3 () {
 // 4: Display a list of all items who are made of wood.
 function question4 () {
   // Answer:
-let woodItems = [];
+// let woodItems = [];
 for (let i = 0; i < data.length; i++){
       if (data[i].materials.includes("wood")){
-        woodItems.push(data[i].title + " is made of wood.");
+        console.log(data[i].title + " is made of wood.");
       }
-  }
-  console.log(woodItems);
+  // }
+  // console.log(woodItems);
+}
 }
 
 //
